@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Houston Restaurants</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css"/>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+    <!-- <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script> -->
+
+    <script type='text/javascript' src='../static/js/leaflet.js'></script>
+    <script type='text/javascript' src='../static/js/jquery.min.js'></script>
+    <script type='text/javascript' src='../static/js/leaflet.markercluster.js'></script>
+  </head>
+<!-- NavBAR here -->
+<!-- Hides If Small or XS -->
+<div class="d-none d-md-block">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <a class="navbar-brand" id = "container_background_red" href="/">
+      Houston Food Finder
+    </a>
+    <a class="navbar-brand" id = "container_background_red" href="/marker">
+      Ratings
+    </a>
+    <a class="navbar-brand" id = "container_background_red" href="/price">
+      Prices
+    </a>
+    <a class="navbar-brand" id = "container_background_red" href="/Ozkar">
+      Fast Map
+    </a>
+    <a class="navbar-brand" id = "container_background_red" href="/heatmap">
+      Heatmap
+    </a>
+    <a class="navbar-brand" id = "container_background_red" href="/location-tracker">
+      Location Tracker
+    </a>
+  </nav>
+</div>
+
+<!-- Hides If Medium or Lg -->
+<div class="d-md-none">
+  <nav class="navbar navbar-expand-md bg-light navbar-light">
+      <!-- Brand -->
+      <a class="navbar-brand" id = "container_background_red" href="/">
+        Houston Food Finder
+      </a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class = "navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id = "container_background_red" href="/">
+              Houston Food Finder
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-link" id = "container_background_red" href="/marker">
+              Ratings
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-link" id = "container_background_red" href="/price">
+              Prices
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-link" id = "container_background_red" href="/Ozkar">
+              Fast Map
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-link" id = "container_background_red" href="/heatmap">
+              Heatmap
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-link" id = "container_background_red" href="/location-tracker">
+              Location Tracker
+            </a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+</div>
+
+
+<!-- End NavBAR -->
+  <body>
+    <h1>Houston Restaurants</h1>
+    <a href="offlinemap.html">offline view</a>
+
+    <p>Fastest interactive map for Houston Restaurants</p>
+
+    <div id="map" style="width: 800px; height: 500px; border: 1px solid #AAA;"></div>
+
+    <div>
+  
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type='text/javascript' src='../static/js/fastfood.js'></script>
+    <script type='text/javascript' src='../static/js/mexican.js'></script>
+    <script type='text/javascript' src='../static/js/pizza.js'></script>
+    <script type='text/javascript' src='../static/js/sandwich.js'></script>
+    <script type='text/javascript' src='../static/js/american.js'></script>
+    <script type='text/javascript' src='../static/js/leaf-demo.js'></script>
+  </body>
+</html>
